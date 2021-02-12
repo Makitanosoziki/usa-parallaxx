@@ -1,5 +1,16 @@
 <template>
-    <h2>concept</h2>
+    <h2 
+    v-parallax-fit
+    :start="['.concept-title',-500]"
+    end="['.concept-title',-600]"
+    :fromStyle="{
+      opacity: 0,
+    }"
+    :toStyle="{
+      opacity: 1,
+    }"
+    class="concept-title"
+    >concept</h2>
     <figure class="concept-figure"><img src="@/assets/concept_figure.png" alt=""></figure>
     <p class="concept-description">FACTORY=SHOP<br>THE FINEST INGREDIENTS FROM ENGLAND</p>
     <section class="concept-item">
